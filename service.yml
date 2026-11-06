@@ -2,7 +2,7 @@ name: astro
 type: service
 from: node
 fromVersionConstraint: "^2.0.0"
-fromVersion: "2.2.0"
+fromVersion: "2.2.1"
 guidance: GUIDANCE.md
 title: Node.js (Astro)
 labels:
@@ -18,7 +18,8 @@ env:
 - name: PORT
   value: '3000'
 - name: WORKSPACE_NODE_COMMAND
-  value: exec node node_modules/astro/bin/astro.mjs dev --host "$HOST" --port "$PORT"
+  value: exec node node_modules/astro/bin/astro.mjs dev --host "$HOST" --port 
+    "$PORT"
 - name: NODE_ENV
   value: production
   envType: dev
